@@ -45,15 +45,8 @@ navigator.mediaDevices.getUserMedia({
             })
             document.body.appendChild(newvideo)
         })
-        //var conn = peer.connect(newPeerId);
-        // on open will be launch when you successfully connect to PeerServer   
-        //conn.on('open', function () {
-        // here you have conn.id
-        //    conn.send('hi! from' + peer.id);
-        // });
     })
 }).catch(e => console.log("Error Retrieving video"))
-
 
 
 peer.on('open', (id) => {
